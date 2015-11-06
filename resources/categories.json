@@ -1,0 +1,146 @@
+{
+  "categories": [
+    {
+      "order": 1,
+      "code": "F",
+      "name": "Food and Supplies",
+      "rules": [
+        "DRIFTWOOD",
+        "RIALTO PIZZA",
+        "WHOLEFDS",
+        "COSTCO",
+        "TARGET DEBIT",
+        "GIANT-EAGLE"
+      ],
+      "type": "Expense"
+    },
+    {
+      "order": 2,
+      "code": "H",
+      "name": "House",
+      "rules": [
+        "PEOPLES NAT GAS",
+        "DUQUESNE LIGHT"
+      ],
+      "type": "Expense"
+    },    
+    {
+      "order": 3,
+      "code": "K",
+      "name": "Kids",
+      "rules": [],
+      "type": "Expense"
+    },    
+    {
+      "order": 4,
+      "code": "L",
+      "name": "Lifestyle",
+      "rules": [
+        "SUPERCUTS",
+        "COMCAST COMCAST",
+        "VERIZON WIRELESS"
+      ],
+      "type": "Expense"
+    },
+    {
+      "order": 5,
+      "code": "M",
+      "name": "Miscellaneous",
+      "rules": [
+        "NAVIENT",
+        "PENN MUTUAL LIFE"
+      ],
+      "type": "Expense"
+    }, 
+    {
+      "order": 6,
+      "code": "T",
+      "name": "Transportation",
+      "rules": [
+        "PARKING IN PITTSBURGH",
+        "CHILDRENS HOSPITAL PARKIN"
+      ],
+      "type": "Expense"
+    },   
+    {
+      "order": 7,
+      "code": "A",
+      "name": "Apartment",
+      "rules": [],
+      "type": "Expense"
+    },    
+    {
+      "order": 8,
+      "code": "S",
+      "name": "Savings",
+      "rules": [
+        "NM 529 PLAN",
+        "CAPITAL ONE",
+        "XXXXX2977"
+      ],
+      "type": "Ignore"
+    },    
+    {
+      "order": 19,
+      "code": "SE",
+      "name": "Summa Expenses",
+      "type": "Income",
+      "rules": [
+        "PTC EZ PASS"
+      ]
+    },
+    {
+      "order": 10,
+      "code": "I",
+      "name": "Ignore",
+      "rules": [
+        "ONLINE CREDIT CARD PMT"
+      ],
+      "type": "Ignore"
+    },
+    {
+      "order": 11,
+      "code": "UN",
+      "name": "Uncategorized",
+      "rules": [],
+      "type": "Ignore"
+    },
+    {
+      "order": 12,
+      "code": "SI",
+      "name": "Summa",
+      "rules": [
+        "FIDELITY EMP SVC SUMMA"
+      ],
+      "type": "Income"
+    },
+    {
+      "order": 12,
+      "code": "FK",
+      "name": "Falk",
+      "rules": [
+        "UNIV PITTSBURGH SALARY"
+      ],
+      "type": "Income"
+    }, 
+    {
+      "order": 13,
+      "code": "BE",
+      "name": "Ben",
+      "rules": [
+        "XXXXX0281"
+      ],
+      "type": "Expense"
+    }, 
+    {
+      "order": 14,
+      "code": "LE",
+      "name": "Leah",
+      "rules": [
+        "XXXXX0302"
+      ],
+      "type": "Expense"
+    }
+  ]
+
+}
