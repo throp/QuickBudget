@@ -60,7 +60,7 @@ public final class QuickBudget {
 	}
 
 	protected QuickBudget() {
-		DataSource ds = JdbcConnectionPool.create("jdbc:h2:~/Code/Personal/QuickBudget/quickbudget", "sa", "");
+		DataSource ds = JdbcConnectionPool.create("jdbc:h2:~/Tools/QuickBudget/quickbudget", "sa", "");
 		DBI dbi = new DBI(ds);
 		dao = dbi.open(QuickBudgetDAO.class);
 	}

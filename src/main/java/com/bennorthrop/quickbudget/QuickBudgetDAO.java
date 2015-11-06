@@ -21,20 +21,20 @@ public interface QuickBudgetDAO {
 	@SqlUpdate("insert into transaction (id, name, amount, posted_dt, user_dt, category_code, transaction_type) values (:id, :name, :amount, :postedDate, :userDate, :categoryCode, :transactionType)")
 	void insertTransaction(@BindBean Transaction transaction);
 
-	@SqlQuery("select id, name, amount, posted_dt, user_dt, category_code, transaction_type from transaction where id = :id")
+	@SqlQuery("select * from transaction where id = :id")
 	Transaction findById(@Bind("id") String id);
 
-	@SqlQuery("select id, name, amount, posted_dt, user_dt, category_code, transaction_type from transaction")
+	@SqlQuery("select * from transaction")
 	List<Transaction> findAllTransactions();
 
 	@SqlQuery("select category_code, sum(amount) as total, monthname(posted_dt) as month from transaction group by category_code, monthname(posted_dt)")
 	@Mapper(CategoryMonthMapper.class)
 	List<CategoryMonth> findCategoryMonths();
 
-	@SqlQuery("select id, name, amount, posted_dt, user_dt, category_code, transaction_type from transaction where monthname(posted_dt) = :month and category_code = :categoryCode order by posted_dt")
+	@SqlQuery("select * from transaction where monthname(posted_dt) = :month and category_code = :categoryCode order by posted_dt")
 	List<Transaction> findByMonthAndCategory(@Bind("month") String month, @Bind("categoryCode") String categoryCode);
 
-	@SqlQuery("select id, name, amount, posted_dt, user_dt, category_code, transaction_type from transaction where category_code = 'UN' and monthname(posted_dt) = :month")
+	@SqlQuery("select * from transaction where category_code = 'UN' and monthname(posted_dt) = :month")
 	List<Transaction> findUncategorized(@Bind("month") String month);
 
 	@SqlUpdate("update transaction set category_code = :categoryCode where id = :id")
